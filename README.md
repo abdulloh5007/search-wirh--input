@@ -4,7 +4,7 @@
 >
 > > Search **TEXT** on second **input**
 
-# This site no includes in **Function REPLACE**
+# This site does not include the --**REPLACE**-- feature
 
 ```javascript
 const text = document.getElementById("text");

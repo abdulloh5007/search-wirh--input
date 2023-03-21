@@ -49,3 +49,20 @@ inp.addEventListener('input', function () {
         }
     })
 });
+
+let setIntervalId;
+
+const flashTitle = (ogTitle, newTitle) =>  {
+    document.title = document.title === ogTitle ? newTitle : ogTitle
+}
+
+document.addEventListener('visibilitychange', () => {
+    if(document.visibilityState === 'visible') {
+        document.title = 'Replace';
+        return clearInterval(setIntervalId)
+    }
+
+    setIntervalId = setInterval(() => {
+        flashTitle("Replace", "(7) Notification replace")
+    }, 1500);
+})

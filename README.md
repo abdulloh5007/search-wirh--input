@@ -6,6 +6,8 @@
 
 # This site does not include the ~~REPLACE~~ feature
 
+# This site can protect your tab in browser open my site  https://search-with-inputs.netlify.app/ and open new tab and wait 2 second and sites title will change
+
 ```javascript
 const text = document.getElementById("text");
 const input = document.getElementById("search-input");
